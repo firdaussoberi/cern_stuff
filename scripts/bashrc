@@ -118,7 +118,7 @@ if ! shopt -oq posix; then
 fi
 
 #Anaconda3
-#export PATH=$HOME/Desktop/anaconda3/bin:$PATH
+#export PATH=$HOME2/Desktop/anaconda3/bin:$PATH
 #for adjusting keypad mouse speed
 #xkbset ma 60 10 10 5 2
 #rcnp path
@@ -137,7 +137,7 @@ echo "mykmpc5: "$mykmpc5
 echo "mykmhome: "$mykmhome
 
 #========LinuxBrew definitions, only if using======================
-#PATH="$HOME/.linuxbrew/bin:$PATH"
+#PATH="$HOME2/.linuxbrew/bin:$PATH"
 #export MANPATH="$(brew --prefix)/share/man:$MANPATH"
 #export INFOPATH="$(brew --prefix)/share/info:$INFOPATH"
 #==================================================================
@@ -157,14 +157,16 @@ echo "mykmhome: "$mykmhome
 #sudo ln -s $(brew --prefix)/bin/python2.7 /usr/bin/python
 
 #sourcing thisroot.sh for CERN ROOT
+username="firdaussoberi"                         #change this line
+export HOME2=/home/${username}                   
 echo "sourcing root/bin/thisroot.sh"...
-WHERE_YOUR_ROOT_IS_INSTALLED=$HOME/root_5_34_36_test
+WHERE_YOUR_ROOT_IS_INSTALLED=$HOME2/root_5_34_36_test
 source ${WHERE_YOUR_ROOT_IS_INSTALLED}/bin/thisroot.sh
 sleep 1
 #print
 
 #for setup of geant4 and root CERN
-source $HOME/setup_bashscript.sh
+source $HOME2/setup_bashscript.sh
 
 #for X11 display
 #export DISPLAY=127.0.0.1:0

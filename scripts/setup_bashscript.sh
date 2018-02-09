@@ -2,11 +2,12 @@
 # created by Kyohei Nakajima - 2016/11/09
 # modified by Firdaus Soberi (for non-RCNP) -2018/01/03 -2018/02/09 for ShafiqSri
 
-#username="shafiqsri" #change this
+username="firdaussoberi" #change this
+export HOME2=/home/${username}
 #export HEPLIB_DIR=/home/${username}
 #====================================
 export last_update="2018/02/09"
-export HEPLIB_DIR=${HOME}
+export HEPLIB_DIR=${HOME2}
 export LD_LIBRARY_PATH=
 export BREW_CELLAR=${HEPLIB_DIR}/.linuxbrew/Cellar
 # ----- Path -----

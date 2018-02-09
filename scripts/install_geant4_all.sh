@@ -1,7 +1,9 @@
 #Initial variables, youu can check what the variables do, but if you want a quick setting just change the two lines below:
 #This assumes you have enough admin/root access to install new packages (e.g sudo access will do)
 #============================================================================================================================
-INSTALL_FOLDER=$HOME/geant4_test   #change this line, all geant4 will be installed inside
+username="firdaussoberi"           #change this line
+export HOME2=/home/${username}                   
+INSTALL_FOLDER=$HOME2/geant4_test  #change this line, all geant4 will be installed inside
 GEANT_VERSION=geant4.10.03.p03     #change this line, or let it be same, you can check the version on geant4 website (link put later)
 #============================================================================================================================
 #=============Preparation, check prerequisites, don't change this unless you know what you are
