@@ -5,3 +5,9 @@ I like this one better, if I need visualization of simulated detector events on-
 
 Ref:
 http://geant4.slac.stanford.edu/Presentations/vis/G4HepRAppTutorial/G4HepRAppTutorial.html
+
+To get:
+$ wget http://www.slac.stanford.edu/~perl/HepRApp/HepRApp.jar
+To run (make sure java is installed on system):
+$ java -jar HepRApp.jar
+From there it will open up a drop-down menu and you can choose your output simulated events and visualized the tracks (if you specify the visual options at runtime).
