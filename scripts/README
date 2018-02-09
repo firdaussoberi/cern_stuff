@@ -6,7 +6,8 @@
 #You can check the content of the command, but it will be self-explanatory
 #=============LONG EXPLANATION
 # 0. Download these files to /home/yourusername. Eg in my case: /home/firdaussoberi, usually this will be $HOME2
-# $  username="firdaussoberi"           #change this line ; export HOME2=/home/${username}                   
+# $  username="firdaussoberi"           #change this line 
+# $  export HOME2=/home/${username}                   
 # $  sudo wget https://raw.githubusercontent.com/firdaussoberi/cern_stuff/master/scripts/cern_install_stuff.tar.gz
 # $  mv cern_install_stuff.tar.gz $HOME2; cd $HOME2; tar -xzvf cern_install_stuff.tar.gz; cd CERN_Install_Scripts_public
 # $  sudo cp $HOME2/.bashrc $HOME2/.bashrc_backup; sudo cp bashrc $HOME2/.bashrc; sudo cp setup_bashscript.sh $HOME2
