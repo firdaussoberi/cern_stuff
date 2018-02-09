@@ -1,5 +1,5 @@
 # cern_stuff
-# ROOT, GEANT4, etc (will be updated as we go)
+# ROOT, GEANT4, etc (will be more updated)
 CERN_Softwares
 
 #Open browser (firefox, chrome, etc), go here:
