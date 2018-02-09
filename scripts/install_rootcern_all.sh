@@ -7,7 +7,7 @@ sudo apt-get install git dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev l
 sudo apt-get install gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.5-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl0-dev libqt4-dev
 #==========================================================================================
 #=========================Initial variables================================================
-username="firdaussoberi"                         #change this line
+username="firdaussoberi"                         #change this line (/home/yourusername)
 export HOME2=/home/${username}                   
 WHERE_TO_DOWNLOAD_ROOT=$HOME2/root_download_test #change this line
 WHERE_TO_INSTALL_ROOT=$HOME2/root_5_34_36_test   #change this line

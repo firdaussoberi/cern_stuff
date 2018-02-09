@@ -6,7 +6,7 @@
 #You can check the content of the command, but it will be self-explanatory
 #=============LONG EXPLANATION
 # 0. Download these files to /home/yourusername. Eg in my case: /home/firdaussoberi, usually this will be $HOME, here we rename to $HOME2 (because home in superuser is different than in normal)
-# $  username="firdaussoberi"           #change this line 
+# $  username="firdaussoberi"           #change this line (/home/yourusername)
 # $  export HOME2=/home/${username}                   
 # $  sudo wget https://raw.githubusercontent.com/firdaussoberi/cern_stuff/master/scripts/cern_install_stuff.tar.gz
 # $  mv cern_install_stuff.tar.gz $HOME2; cd $HOME2; tar -xzvf cern_install_stuff.tar.gz; cd CERN_Install_Scripts_public
@@ -23,7 +23,7 @@
 
 #WHAT???? TL;DR, This is the short version of what I said, just do these and you are fine:
 #===========IN HURRY? SHORT EXPLANATION
-#0. $  username="firdaussoberi"           #change this line 
+#0. $  username="firdaussoberi"           #change this line (/home/yourusername)
 #   $  export HOME2=/home/${username}                   
 #   $  sudo wget https://raw.githubusercontent.com/firdaussoberi/cern_stuff/master/scripts/cern_install_stuff.tar.gz;
 #   $  sudo mv cern_install_stuff.tar.gz $HOME2; cd $HOME2; sudo tar -xzvf cern_install_stuff.tar.gz; cd CERN_Install_Scripts_public
