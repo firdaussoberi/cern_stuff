@@ -1,0 +1,45 @@
+#=======================================
+# README, Quick Geant4 and ROOT install
+# M. Firdaus M. Soberi 2018/02/09
+#=======================================
+
+#You can check the content of the command, but it will be self-explanatory
+#=============LONG EXPLANATION
+# 0. Download these files to /home/yourusername. Eg in my case: /home/firdaussoberi
+# $
+# $
+# 1. First make sure you do these things (assuming you are not using tmux or screen yet): 
+# $  sudo apt-get update; sudo apt-get install screen; screen
+# $  sudo su
+# 2. You should be inside root and having superuser access now (On terminal it will be root@someid). From inside root (this to avoid annoyance of having to put passwords for many sudo commands later, because for a long time in between commands if sudo 'command' is invoked, you need to input password again). Then to quick install, just edit these two files (the lines will be marked by 'change this line'):
+# 'install_rootcern_all.sh' and 'install_geant4_all.sh'
+# 3. Then source the file below (You can check or modify what this file does, this file also outputs to terminal as well as to .log file, you can just cat the .log file to see how is the progress/ if there is any error in the middle of installation):
+# $  source run_install_root_geant4.sh
+# Don't forget to CTRL-A and CRTL-D to detach from current screen, to resume just do 'screen list; screen -r;
+# 4. Sit back and relax, enjoy... Sip coffee, or sleep :)
+
+#WHAT???? TL;DR, This is the short version of what I said, just do these and you are fine:
+#===========IN HURRY? SHORT EXPLANATION
+#1. $  sudo apt-get update; sudo apt-get install screen; screen
+#2. $  sudo su
+#3. No command here, edit these files: (Only first two lines for each file are necessary, really): 'install_rootcern_all.sh' and 'install_geant4_all.sh'
+#4. Don't just run! Double check, to not make your system broken. Check: 'run_install_root_geant4.sh'
+#5. $  source run_install_root_geant4.sh
+#6. CTRL-A and CRTL-D
+#7. Pray all is well with your machine and no error pops up.
+
+#=========================================================================================
+#For more info, go to:
+#===================GEANT4 Guide===========================================================
+http://geant4.web.cern.ch/geant4/UserDocumentation/UsersGuides/InstallationGuide/html/gettingstarted.html#
+http://geant4.cern.ch/support/userdocuments.shtml
+#How to use:
+http://geant4.cern.ch/G4UsersDocuments/UsersGuides/ForApplicationDeveloper/html/GettingStarted/index.html
+http://geant4.cern.ch/G4UsersDocuments/UsersGuides/ForApplicationDeveloper/html/GettingStarted/mainProgram.html
+http://geant4.slac.stanford.edu/SLACTutorial14/HandsOn1/
+#Physics List:
+http://geant4.web.cern.ch/geant4/UserDocumentation/UsersGuides/PhysicsListGuide/html/index.html
+#==========================================================================================
+#===================ROOT CERN Guide========================================================
+https://root.cern.ch/building-root
+#==========================================================================================
