@@ -10,4 +10,4 @@ To get:
 $ wget http://www.slac.stanford.edu/~perl/HepRApp/HepRApp.jar
 To run (make sure java is installed on system):
 $ java -jar HepRApp.jar
-From there it will open up a drop-down menu and you can choose your output simulated events and visualized the tracks (if you specify the visual options at runtime).
+From there it will open up a drop-down menu and you can choose your output simulated events and visualize the tracks (if you specify the visual options at runtime).
