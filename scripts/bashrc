@@ -157,7 +157,7 @@ echo "mykmhome: "$mykmhome
 #sudo ln -s $(brew --prefix)/bin/python2.7 /usr/bin/python
 
 #sourcing thisroot.sh for CERN ROOT
-username="firdaussoberi"                         #change this line
+username="firdaussoberi"                         #change this line (/home/yourusername)
 export HOME2=/home/${username}                   
 echo "sourcing root/bin/thisroot.sh"...
 WHERE_YOUR_ROOT_IS_INSTALLED=$HOME2/root_5_34_36_test

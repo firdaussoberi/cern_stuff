@@ -2,7 +2,7 @@
 # created by Kyohei Nakajima - 2016/11/09
 # modified by Firdaus Soberi (for non-RCNP) -2018/01/03 -2018/02/09 for ShafiqSri
 
-username="firdaussoberi" #change this
+username="firdaussoberi" #change this (/home/yourusername)
 export HOME2=/home/${username}
 #export HEPLIB_DIR=/home/${username}
 #====================================

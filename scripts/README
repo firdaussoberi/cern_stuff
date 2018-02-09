@@ -5,7 +5,7 @@
 
 #You can check the content of the command, but it will be self-explanatory
 #=============LONG EXPLANATION
-# 0. Download these files to /home/yourusername. Eg in my case: /home/firdaussoberi, usually this will be $HOME2
+# 0. Download these files to /home/yourusername. Eg in my case: /home/firdaussoberi, usually this will be $HOME, here we rename to $HOME2 (because home in superuser is different than in normal)
 # $  username="firdaussoberi"           #change this line 
 # $  export HOME2=/home/${username}                   
 # $  sudo wget https://raw.githubusercontent.com/firdaussoberi/cern_stuff/master/scripts/cern_install_stuff.tar.gz
@@ -23,13 +23,14 @@
 
 #WHAT???? TL;DR, This is the short version of what I said, just do these and you are fine:
 #===========IN HURRY? SHORT EXPLANATION
-#0. $  username="firdaussoberi"           #change this line ; export HOME2=/home/${username}                   
+#0. $  username="firdaussoberi"           #change this line 
+#   $  export HOME2=/home/${username}                   
 #   $  sudo wget https://raw.githubusercontent.com/firdaussoberi/cern_stuff/master/scripts/cern_install_stuff.tar.gz;
 #   $  sudo mv cern_install_stuff.tar.gz $HOME2; cd $HOME2; sudo tar -xzvf cern_install_stuff.tar.gz; cd CERN_Install_Scripts_public
-#   $  sudo cp $HOME2/.bashrc $HOME2/.bashrc_backup; sudo cp bashrc $HOME2/.bashrc; sudo cp setup_bashscript.sh $HOME2
+#   $  sudo cp $HOME2/.bashrc $HOME2/.bashrc_backup; sudo cp bashrc $HOME2/.bashrc; sudo cp setup_bashscript.sh $HOME2    #then also edit the lines marked with 'change...'
 #1. $  sudo apt-get update; sudo apt-get install screen; screen
 #2. $  sudo su
-#3. No command here, edit these files: (Only first two lines for each file are necessary, really): 'install_rootcern_all.sh' and 'install_geant4_all.sh'
+#3. No command here, edit these files: (Only first part, three lines for each file are necessary, really-username, folder name, version): 'install_rootcern_all.sh' and 'install_geant4_all.sh'
 #4. Don't just run! Double check, to not make your system broken. Check: 'run_install_root_geant4.sh'
 #5. $  source run_install_root_geant4.sh
 #6. CTRL-A and CRTL-D
