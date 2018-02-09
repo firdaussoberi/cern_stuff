@@ -39,6 +39,7 @@
 #======================STANDARD OUTPUT, STANDARD ERROR====================================
 # How do I know if the code runs fine?
 # You can do: cat log_rootcern.log or cat log_geant4.log   (find these files, :D)
+# You can check how these files are produced in 'run_install_root_geant4.sh'
 #=========================================================================================
 
 #=========================================================================================
