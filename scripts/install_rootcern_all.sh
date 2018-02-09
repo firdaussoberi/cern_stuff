@@ -7,8 +7,8 @@ sudo apt-get install git dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev l
 sudo apt-get install gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.5-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl0-dev libqt4-dev
 #==========================================================================================
 #=========================Initial variables================================================
-WHERE_TO_DOWNLOAD_ROOT=/home/firdaussoberi/root_download      #change this line
-WHERE_TO_INSTALL_ROOT=/home/firdaussoberi/root_5_34_36_test   #change this line
+WHERE_TO_DOWNLOAD_ROOT=$HOME/root_download_test #change this line
+WHERE_TO_INSTALL_ROOT=$HOME/root_5_34_36_test   #change this line
 #$ WHERE_TO_INSTALL_ROOT=/usr/local                           
 #$ WHERE_TO_INSTALL_ROOT=/home/firdaussoberi/root_5_34_36 
 #=======================================================================================

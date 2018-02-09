@@ -117,53 +117,54 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-
 #Anaconda3
-#export PATH=/home/firdaussoberi/Desktop/anaconda3/bin:$PATH
+#export PATH=$HOME/Desktop/anaconda3/bin:$PATH
 #for adjusting keypad mouse speed
-xkbset ma 60 10 10 5 2
+#xkbset ma 60 10 10 5 2
 #rcnp path
 #export CDPATH=.:/user/something/somefolders
-export myrcnp="firdaus9@rcnp.osaka-u.ac.jp"
-export myemail="firdaussoberi@km.phys.sci.osaka-u.ac.jp"
-export mykmpc5="firdaussoberi@kmpc5.phys.sci.osaka-u.ac.jp"
-export mykmhome="firdaussoberi@kmhome.kmnet.phys.sci.osaka-u.ac.jp"
-export mylxplus="mmohdsob@lxplus.cern.ch"
+export myrcnp="user1@rcnp.osaka-u.ac.jp"
+export myemail="user1@km.phys.sci.osaka-u.ac.jp"
+export mykmpc5="user1@kmpc5.phys.sci.osaka-u.ac.jp"
+export mykmhome="user1@kmhome.kmnet.phys.sci.osaka-u.ac.jp"
+export mylxplus="user1@lxplus.cern.ch"
 
+echo "Replace 'user1' with your proper username and proper email address, create own variables"
+echo "Then delete these two echo lines"
 echo "myrcnp: " $myrcnp
 echo "myemail: "$myemail
 echo "mykmpc5: "$mykmpc5
 echo "mykmhome: "$mykmhome
 
-#=============================================
-PATH="$HOME/.linuxbrew/bin:$PATH"
-export MANPATH="$(brew --prefix)/share/man:$MANPATH"
-export INFOPATH="$(brew --prefix)/share/info:$INFOPATH"
-#=============================================
-sudo unlink /usr/bin/gcc
-sudo unlink /usr/bin/g++
-sudo unlink /usr/bin/gfortran
-sudo unlink /usr/bin/python
-sudo ln -s /usr/bin/gcc-4.9 /usr/bin/gcc
-sudo ln -s /usr/bin/g++-4.9 /usr/bin/g++
-sudo ln -s /usr/bin/gfortran-4.9 /usr/bin/gfortran
-sudo unlink $(brew --prefix)/bin/gcc
-sudo unlink $(brew --prefix)/bin/g++
-sudo unlink $(brew --prefix)/bin/gfortran
-sudo ln -s /usr/bin/gcc-4.9 $(brew --prefix)/bin/gcc
-sudo ln -s /usr/bin/g++-4.9 $(brew --prefix)/bin/g++
-sudo ln -s /usr/bin/gfortran-4.9 $(brew --prefix)/bin/gfortran
-sudo ln -s $(brew --prefix)/bin/python2.7 /usr/bin/python
+#========LinuxBrew definitions, only if using======================
+#PATH="$HOME/.linuxbrew/bin:$PATH"
+#export MANPATH="$(brew --prefix)/share/man:$MANPATH"
+#export INFOPATH="$(brew --prefix)/share/info:$INFOPATH"
+#==================================================================
+#sudo unlink /usr/bin/gcc
+#sudo unlink /usr/bin/g++
+#sudo unlink /usr/bin/gfortran
+#sudo unlink /usr/bin/python
+#sudo ln -s /usr/bin/gcc-4.9 /usr/bin/gcc
+#sudo ln -s /usr/bin/g++-4.9 /usr/bin/g++
+#sudo ln -s /usr/bin/gfortran-4.9 /usr/bin/gfortran
+#sudo unlink $(brew --prefix)/bin/gcc
+#sudo unlink $(brew --prefix)/bin/g++
+#sudo unlink $(brew --prefix)/bin/gfortran
+#sudo ln -s /usr/bin/gcc-4.9 $(brew --prefix)/bin/gcc
+#sudo ln -s /usr/bin/g++-4.9 $(brew --prefix)/bin/g++
+#sudo ln -s /usr/bin/gfortran-4.9 $(brew --prefix)/bin/gfortran
+#sudo ln -s $(brew --prefix)/bin/python2.7 /usr/bin/python
 
 #sourcing thisroot.sh for CERN ROOT
 echo "sourcing root/bin/thisroot.sh"...
-source ~/Desktop/All_Desktop_KishBigPC/root/bin/thisroot.sh
+WHERE_YOUR_ROOT_IS_INSTALLED=$HOME/root_5_34_36_test
+source ${WHERE_YOUR_ROOT_IS_INSTALLED}/bin/thisroot.sh
 sleep 1
 #print
 
 #for setup of geant4 and root CERN
-source /home/firdaussoberi/setup_20180103_notRCNP.sh
+source $HOME/setup_bashscript.sh
 
 #for X11 display
 #export DISPLAY=127.0.0.1:0
