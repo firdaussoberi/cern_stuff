@@ -50,6 +50,7 @@ sudo mkdir -pv $WHERE_TO_INSTALL_ROOT
 cd $WHERE_TO_INSTALL_ROOT
 #sudo cmake $WHERE_TO_DOWNLOAD_ROOT/root
 sudo cmake $WHERE_TO_DOWNLOAD_ROOT/root-6.14.00
+sudo cmake --build . --target VDT
 sudo cmake --build .
 #=====================================================================================
 
