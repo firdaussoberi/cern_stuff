@@ -1,5 +1,11 @@
 #$ set -x
 
+#Fix Ubuntu 18 default gcc-7 and g++-7 to gcc-4.8 and g++-4.8 to make compatible for ROOT5 (For ROOT6 need gcc-7 and g++-7 back)
+sudo apt-get install g++-4.8 gcc-4.8
+ls -la /usr/bin/ | grep -oP "[\S]*(gcc|g\+\+)(-[a-z]+)*[\s]" | xargs bash -c 'for link in ${@:1}; do sudo ln -s -f "/usr/bin/${link}-${0}" "/usr/bin/${link}"; done' 4.8
+gcc --version
+g++ --version
+#From: https://askubuntu.com/questions/26498/how-to-choose-the-default-gcc-and-g-version
 #========================Prerequisites (Ubuntu only, refer cern website's for redhat etc)===
 #required packages
 sudo apt-get install git dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev
