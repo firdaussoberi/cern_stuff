@@ -27,7 +27,8 @@ cd $WHERE_TO_INSTALL_ROOT
 #sudo cmake $WHERE_TO_DOWNLOAD_ROOT/root
 sudo cmake $WHERE_TO_DOWNLOAD_ROOT/root-6.14.00
 sudo cmake --build . --target VDT
-sudo cmake --build . -- -j3
+sudo cmake --build . -- -j$(nproc)
+#nproc is for how many core the cpu has, this is for faster building by using all cores
 #=====================================================================================
 #*************************************************************************************
 #*************************************************************************************
