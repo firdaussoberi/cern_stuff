@@ -7,7 +7,7 @@ sudo apt-get install git dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev l
 sudo apt-get install gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.5-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl0-dev libqt4-dev
 #==========================================================================================
 #Fix Ubuntu 18 default gcc-7 and g++-7 to gcc-4.8 and g++-4.8 to make compatible for ROOT5 (For ROOT6 need gcc-7 and g++-7 back)
-sudo apt-get install g++-4.8 gcc-4.8 gfortran-4.8
+sudo apt-get install g++-4.8 gcc-4.8 gfortran-4.8 libxml++*-dev
 ls -la /usr/bin/ | grep -oP "[\S]*(gcc|g\+\+|gfortran)(-[a-z]+)*[\s]" | xargs bash -c 'for link in ${@:1}; do sudo ln -s -f "/usr/bin/${link}-${0}" "/usr/bin/${link}"; done' 4.8
 gcc --version
 g++ --version
