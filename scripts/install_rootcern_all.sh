@@ -10,8 +10,8 @@ sudo apt-get install gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.
 #username="firdaussoberi"                         #change this line (/home/yourusername)
 #export HOME2=/home/${username}                   
 export HOME2=$HOME                   
-WHERE_TO_DOWNLOAD_ROOT=$HOME2/root_download #change this line
-WHERE_TO_INSTALL_ROOT=$HOME2/root_5_34_36   #change this line
+WHERE_TO_DOWNLOAD_ROOT=$HOME2/root_download_v5 #change this line
+WHERE_TO_INSTALL_ROOT=$HOME2/root_5_34_36_run   #change this line
 #$ WHERE_TO_INSTALL_ROOT=/usr/local                           
 #$ WHERE_TO_INSTALL_ROOT=$HOME2/root_5_34_36 
 #=======================================================================================
