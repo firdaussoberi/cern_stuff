@@ -9,7 +9,7 @@ sudo apt-get install gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.
 #=========================Initial variables================================================
 export HOME2=$HOME
 WHERE_TO_DOWNLOAD_ROOT=$HOME2/root_download                                  #can change folder name
-WHERE_TO_INSTALL_ROOT=$HOME2/root_6_14_00                                    #comment if using ROOt ver 5
+WHERE_TO_INSTALL_ROOT=$HOME2/root_6_14_02                                    #comment if using ROOt ver 5
                                                                              #can change folder name
 #WHERE_TO_INSTALL_ROOT=$HOME2/root_5_34_36                                   #uncomment if using ROOt ver 5
                                                                              #can change folder name
@@ -18,16 +18,17 @@ WHERE_TO_INSTALL_ROOT=$HOME2/root_6_14_00                                    #co
 sudo mkdir -pv $WHERE_TO_DOWNLOAD_ROOT
 cd $WHERE_TO_DOWNLOAD_ROOT
 #sudo wget https://root.cern.ch/download/root_v5.34.36.source.tar.gz         #uncomment for ROOT ver 5
-sudo wget https://root.cern.ch/download/root_v6.14.00.source.tar.gz          #comment if using ROOt ver 5
+sudo wget https://root.cern.ch/download/root_v6.14.02.source.tar.gz          #comment if using ROOt ver 5
 #sudo tar -xzvpf root_v5.34.36.source.tar.gz                                 #uncomment for ROOT ver 5
-sudo tar -xzvpf root_v6.14.00.source.tar.gz                                  #comment if using ROOt ver 5
+sudo tar -xzvpf root_v6.14.02.source.tar.gz                                  #comment if using ROOt ver 5
 #===============Building and compiling, works only for source distribution============
 sudo mkdir -pv $WHERE_TO_INSTALL_ROOT
 cd $WHERE_TO_INSTALL_ROOT
 #sudo cmake $WHERE_TO_DOWNLOAD_ROOT/root
-sudo cmake $WHERE_TO_DOWNLOAD_ROOT/root-6.14.00
-sudo cmake --build . --target VDT
-sudo cmake --build . -- -j$(nproc)
+sudo cmake $WHERE_TO_DOWNLOAD_ROOT/root-6.14.02
+#sudo cmake --build . --target VDT
+sudo cmake --build . -- -j2
+#sudo cmake --build . -- -j$(nproc)
 #nproc is for how many core the cpu has, this is for faster building by using all cores
 #=====================================================================================
 #*************************************************************************************
