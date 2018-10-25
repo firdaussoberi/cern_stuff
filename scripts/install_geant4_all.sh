@@ -137,7 +137,7 @@ cd $INSTALL_FOLDER
 #sudo wget http://geant4.web.cern.ch/geant4/support/source/${GEANT_VERSION}.tar.gz     #now download from github
 sudo wget ${GEANT_GITDOWNLOAD}
 #sudo tar -xzvpf ${GEANT_VERSION}.tar.gz
-sudo tar -xzvpf ${GEANT_VERSION}
+sudo tar -xzvpf ${GEANT_GITDOWNLOAD}
 #==========CANDLES current version, but better to use latest patch for each version, this one not really the latest, usually ends with p03 (patch 03)
 #sudo wget http://geant4.web.cern.ch/geant4/support/source/geant4.10.02.p02.tar.gz #(so this one is geant4 version 10.2, patch 2)
 #sudo tar -zxf geant4.10.02.p02.tar.gz
@@ -146,7 +146,7 @@ sudo tar -xzvpf ${GEANT_VERSION}
 #geant4.10.03.p03.tar.gz
 #geant4.10.04.tar.gz
 #==========Build
-#sudo mkdir -pv ${GEANT_VERSION}-build
+sudo mkdir -pv ${GEANT_VERSION}-build
 cd ${GEANT_VERSION}-build
 #=============Advanced option uses -D arguments, see e.g: http://geant4.web.cern.ch/geant4/UserDocumentation/UsersGuides/InstallationGuide/BackupVersions/V9.6/fo/BookInstalGuide.pdf 
 sudo cmake -DCMAKE_INSTALL_PREFIX=../${GEANT_VERSION}-build/ -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_OPENGL_X11=ON -DGEANT4_USE_RAYTRACER_X11=ON -DGEANT4_USE_QT=ON -DGEANT4_USE_G3TOG4=ON -DGEANT4_USE_INVENTOR=OFF -DGEANT4_USE_XM=ON ../${GEANT_VERSION}/
