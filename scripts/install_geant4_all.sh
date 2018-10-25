@@ -137,7 +137,7 @@ cd $INSTALL_FOLDER
 #sudo wget http://geant4.web.cern.ch/geant4/support/source/${GEANT_VERSION}.tar.gz     #now download from github
 sudo wget ${GEANT_GITDOWNLOAD}
 #sudo tar -xzvpf ${GEANT_VERSION}.tar.gz
-sudo tar -xzvpf ${GEANT_GITDOWNLOAD}
+sudo tar -xzvpf ${GEANT_VERSION}
 #==========CANDLES current version, but better to use latest patch for each version, this one not really the latest, usually ends with p03 (patch 03)
 #sudo wget http://geant4.web.cern.ch/geant4/support/source/geant4.10.02.p02.tar.gz #(so this one is geant4 version 10.2, patch 2)
 #sudo tar -zxf geant4.10.02.p02.tar.gz
