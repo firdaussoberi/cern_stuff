@@ -20,8 +20,8 @@ sudo apt-get install libxerces-c3-dev qt4-dev-tools freeglut3-dev libmotif-dev t
 
 #=============Configure visualization tools for GEANT4, OpenInventor option 
 #=============
-sudo mkdir -pv ${INSTALL_FOLDER}/coin3d_source
-cd ${INSTALL_FOLDER}/coin3d_source
+#sudo mkdir -pv ${INSTALL_FOLDER}/coin3d_source
+#cd ${INSTALL_FOLDER}/coin3d_source
 #============Download from Github
 #sudo wget https://github.com/firdaussoberi/cern_stuff/blob/master/Coin-3.1.3.tar.gz
 #sudo wget https://github.com/firdaussoberi/cern_stuff/blob/master/SoQt-1.5.0.tar.gz
