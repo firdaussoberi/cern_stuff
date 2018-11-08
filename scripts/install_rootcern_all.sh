@@ -27,7 +27,6 @@ sudo mkdir -pv $WHERE_TO_INSTALL_ROOT
 cd $WHERE_TO_INSTALL_ROOT
 #sudo cmake $WHERE_TO_DOWNLOAD_ROOT/root
 sudo cmake $WHERE_TO_DOWNLOAD_ROOT/root-${ROOT6VER}
-#sudo cmake --build . --target VDT
 sudo cmake --build . -- -j2
 #sudo cmake --build . -- -j$(nproc)
 #nproc is for how many core the cpu has, this is for faster building by using all cores
@@ -35,14 +34,3 @@ sudo cmake --build . -- -j2
 #*************************************************************************************
 #*************************************************************************************
 #*************************************************************************************
-#=====================================================================================
-#=====================================================================================
-#old commands,  don't bother, for testing purpose
-#username="firdaussoberi"                         #change this line (/home/yourusername)
-#export HOME2=/home/${username}                   
-#$ WHERE_TO_INSTALL_ROOT=/usr/local                           
-#$ sudo wget https://root.cern.ch/download/root_v5.34.36.Linux-ubuntu14-x86_64-gcc4.8.tar.gz
-#$ sudo tar -xzvpf root_v5.34.36.Linux-ubuntu14-x86_64-gcc4.8.tar.gz
-#$ tar -xzvpf root_v5.30.00.source.tar.gz
-#$ wget https://root.cern.ch/download/root_v5.34.36.Linux-ubuntu14-x86_64-gcc4.8.tar.gz
-#$ wget ftp://root.cern.ch/root/root_v5.30.00.source.tar.gz
