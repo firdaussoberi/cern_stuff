@@ -46,13 +46,13 @@ sudo cmake -DCMAKE_INSTALL_PREFIX=../${GEANT_VERSION}-build/ -DGEANT4_INSTALL_DA
 #==========After cmake, make. N is number of cpu cores, e.g) 2. After make、make instal
 sudo make
 sudo make install
-#$make -jN
-#$make install -jN
+#$sudo make -jN
+#$sudo make install -jN
 
 #example, to speed up:
-#$make -j2
-#$make install -j2
+#$sudo make -j2
+#$sudo make install -j2
 #or to use full processor power:
-#$make -j$(nproc)
-#$make install -j$(nproc)
+#$sudo make -j$(nproc)
+#$sudo make install -j$(nproc)
 #$(nproc) is the number of cores your PC has. Example for quadcore echo $(nproc) would give 4
