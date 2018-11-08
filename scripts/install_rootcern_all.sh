@@ -27,7 +27,7 @@ then
     echo "ROOTVERSION is:" $MAJORROOTVER
     echo "Source folder is:" $ROOTSOURCE_FOLDER 
 else
-    echo "ERROR: ROOTVERSION not found. Check the install_rootcern_all.sh file and start again"
+    echo "ERROR: ROOTVERSION not valid. Check the install_rootcern_all.sh file and start again"
     return
 fi
 #==========================================================================================
