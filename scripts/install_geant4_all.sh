@@ -5,7 +5,7 @@ export HOME2=$HOME
 INSTALL_FOLDER=$HOME2/geant4_all  #change this line, all geant4 will be installed inside
 GEANT4=geant4
 GEANT4VER=10.3
-GEANT4PATCHNUM=3                   #if no patch yet or is the first version of the release, put GEANTPATCHNUM=0
+GEANT4PATCHNUM=3                   #if no patch yet or is the first version of the release, put GEANTPATCHNUM=0 or if beta version of the release, put GEANTPATCHNUM=0.beta
                                    #refer: https://github.com/Geant4/geant4/releases
 GEANT_GITDOWNLOAD=v${GEANT4VER}.${GEANT4PATCHNUM}.tar.gz   #fix broken geant4 link, now download from github
 GEANT_VERSION=${GEANT4}-${GEANT4VER}.${GEANT4PATCHNUM}
