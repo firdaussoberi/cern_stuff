@@ -27,7 +27,8 @@ then
     echo "ROOTVERSION is:" $MAJORROOTVER
     echo "Source folder is:" $ROOTSOURCE_FOLDER 
 else
-    echo "ERROR: ROOTVERSION not valid. Check the install_rootcern_all.sh file and start again"
+    # Practically we can do it, but limit to only ROOT5 and ROOT6 here
+    echo "ERROR: ROOTVERSION other than 5 or 6 not supported here. Check the install_rootcern_all.sh file and start again"
     return
 fi
 #==========================================================================================
