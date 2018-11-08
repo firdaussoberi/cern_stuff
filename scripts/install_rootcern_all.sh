@@ -9,7 +9,7 @@ sudo apt-get install gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.
 #==========================================================================================
 #=========================Initial variables================================================
 #Comment and change to your preferred ROOT version
-#ROOTVER=6.14.02
+#6.14.02
 ROOTVER=5.34.36
 
 export HOME2=$HOME
