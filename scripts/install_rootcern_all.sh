@@ -2,7 +2,8 @@
 
 #========================Prerequisites/Required (Ubuntu only, refer cern website's for redhat etc)===
 #required packages
-sudo apt-get install wget xorg emacs24 gedit python-pip git dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev
+sudo apt-get install wget xorg emacs25 emacs24 gedit python-pip git dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev
+#emacs25 for Ubuntu18
 #optional but nevermind...
 sudo apt-get install gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.5-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl0-dev libqt4-dev
 #==========================================================================================
