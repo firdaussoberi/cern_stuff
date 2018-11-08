@@ -8,7 +8,9 @@ sudo apt-get install wget xorg emacs25 emacs24 gedit python-pip git dpkg-dev cma
 sudo apt-get install gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.5-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl0-dev libqt4-dev
 #==========================================================================================
 #=========================Initial variables================================================
-ROOTVER=6.14.02
+#Comment and change to your preferred ROOT version
+#ROOTVER=6.14.02
+ROOTVER=5.34.36
 
 export HOME2=$HOME
 #=================================== Checking ROOTVER =====================================
