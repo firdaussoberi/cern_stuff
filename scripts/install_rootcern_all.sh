@@ -19,10 +19,12 @@ if [  $MAJORROOTVER -eq 5 ]
 then
     ROOTSOURCE_FOLDER=root
     echo "ROOTVERSION is:" $MAJORROOTVER
+    echo "Source folder is:" $ROOTSOURCE_FOLDER 
 elif [  $MAJORROOTVER -eq 6 ]
 then
     ROOTSOURCE_FOLDER=root-${ROOTVER}
     echo "ROOTVERSION is:" $MAJORROOTVER
+    echo "Source folder is:" $ROOTSOURCE_FOLDER 
 else
     echo "ERROR: ROOTVERSION not found. Check the install_rootcern_all.sh file and start again"
     return
