@@ -6,9 +6,10 @@ INSTALL_FOLDER=$HOME2/geant4_new  #change this line, all geant4 will be installe
 GEANT4=geant4
 GEANT4VER=10.3
 GEANT4PATCHNUM=3                   #if no patch yet or is the first version of the release, put GEANTPATCHNUM=0
-#refer: https://github.com/Geant4/geant4/releases
+                                   #refer: https://github.com/Geant4/geant4/releases
 GEANT_GITDOWNLOAD=v${GEANT4VER}.${GEANT4PATCHNUM}.tar.gz   #fix broken geant4 link, now download from github
 GEANT_VERSION=${GEANT4}-${GEANT4VER}.${GEANT4PATCHNUM}
+
 #GEANT_VERSION=geant4.10.03.p03     #change this line, or let it be same, you can check the version on geant4 website (link put later)
 #============================================================================================================================
 #=============Preparation, check prerequisites, don't change this unless you know what you are
@@ -26,8 +27,8 @@ cd ${INSTALL_FOLDER}/${GEANT_VERSION}-build
 cd $INSTALL_FOLDER
 #==========Download geant4 source
 #sudo wget http://geant4.web.cern.ch/geant4/support/source/${GEANT_VERSION}.tar.gz     #now download from github
-sudo wget https://github.com/Geant4/geant4/archive/${GEANT_GITDOWNLOAD}
 #sudo tar -xzvpf ${GEANT_VERSION}.tar.gz
+sudo wget https://github.com/Geant4/geant4/archive/${GEANT_GITDOWNLOAD}
 sudo tar -xzvpf ${GEANT_GITDOWNLOAD}
 
 #==========Build
