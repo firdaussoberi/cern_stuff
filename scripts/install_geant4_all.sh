@@ -2,7 +2,7 @@
 #This assumes you have enough admin/root access to install new packages (e.g sudo access will do)
 #============================================================================================================================
 export HOME2=$HOME
-INSTALL_FOLDER=$HOME2/geant4_new  #change this line, all geant4 will be installed inside
+INSTALL_FOLDER=$HOME2/geant4_all  #change this line, all geant4 will be installed inside
 GEANT4=geant4
 GEANT4VER=10.3
 GEANT4PATCHNUM=3                   #if no patch yet or is the first version of the release, put GEANTPATCHNUM=0
