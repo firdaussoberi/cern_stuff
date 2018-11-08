@@ -46,6 +46,11 @@ sudo cmake -DCMAKE_INSTALL_PREFIX=../${GEANT_VERSION}-build/ -DGEANT4_INSTALL_DA
 #==========After cmake, make. N is number of cpu cores, e.g) 2. After make、make instal
 sudo make
 sudo make install
+#$make -j2
+#$make install -j2
+#or to use full processor power:
+#$make -j2
+#$make install -j2
 #$make -jN
 #$make install -jN
 #==========Add path to .bashrc
