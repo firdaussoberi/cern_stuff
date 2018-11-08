@@ -39,7 +39,7 @@ WHERE_TO_INSTALL_ROOT=$HOME2/root-${ROOTVER}_run                            #can
 sudo mkdir -pv $WHERE_TO_DOWNLOAD_ROOT
 cd $WHERE_TO_DOWNLOAD_ROOT
 sudo wget https://root.cern.ch/download/root_v${ROOTVER}.source.tar.gz      
-sudo tar -xzvpf root_v${ROOTVER}.source.tar.gz                              #comment if using ROOt ver 5
+sudo tar -xzvpf root_v${ROOTVER}.source.tar.gz
 
 #===============Building and compiling, works only for source distribution============
 sudo mkdir -pv $WHERE_TO_INSTALL_ROOT
