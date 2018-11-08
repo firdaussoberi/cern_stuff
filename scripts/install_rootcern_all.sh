@@ -17,11 +17,11 @@ export HOME2=$HOME
 MAJORROOTVER="${ROOTVER:0:1}"
 if [  $MAJORROOTVER -eq 5 ]
 then
-    ROOTSOURCE_FOLDER = root
+    ROOTSOURCE_FOLDER=root
     echo "ROOTVERSION is:" $MAJORROOTVER
 elif [  $MAJORROOTVER -eq 6 ]
 then
-    ROOTSOURCE_FOLDER = root-${ROOTVER}
+    ROOTSOURCE_FOLDER=root-${ROOTVER}
     echo "ROOTVERSION is:" $MAJORROOTVER
 else
     echo "ERROR: ROOTVERSION not found. Check the install_rootcern_all.sh file and start again"
