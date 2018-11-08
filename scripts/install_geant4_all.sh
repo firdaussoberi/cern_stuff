@@ -47,6 +47,8 @@ sudo cmake -DCMAKE_INSTALL_PREFIX=../${GEANT_VERSION}-build/ -DGEANT4_INSTALL_DA
 sudo make
 sudo make install
 
+#$make -jN
+#$make install -jN
 #$make -j2
 #$make install -j2
 #or to use full processor power:
